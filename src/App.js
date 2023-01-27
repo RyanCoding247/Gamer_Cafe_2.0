@@ -8,6 +8,7 @@ import MenuPage from './features/pages/MenuPage';
 import RoomsPage from './features/pages/RoomsPage';
 import StorePage from './features/pages/StorePage';
 import Header from './features/components/Header';
+import Footer from './features/components/Footer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path='rooms' element={<RoomsPage />} />
         <Route path='store' element={<StorePage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

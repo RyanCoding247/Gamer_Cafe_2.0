@@ -1,11 +1,12 @@
 import { Container } from "reactstrap";
+import SubHeader from "../components/SubHeader";
+import FeaturedEvent from "../events/FeaturedEvent";
 
 const HomePage = () => {
     return (
-        <Container fluid>
-            <div>
-                Hello Home!
-            </div>
+        <Container>
+            <SubHeader current='Home' />
+            <FeaturedEvent />
         </Container>
     )
 }
