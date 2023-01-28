@@ -42,7 +42,7 @@ body {
 }
 
 .otherEventsImg {
-    height: 140px;
+    height: 200px;
     width: 300px;
     padding-bottom: 20px;
     padding-top: 5px;
@@ -50,9 +50,10 @@ body {
 }
 
 .mainEvent {
-    height: 300px;
+    height: 500px;
     width: 400px;
     object-fit: cover;
+    padding-top: 30px;
 }
 
 .card {

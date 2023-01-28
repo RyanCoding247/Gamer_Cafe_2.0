@@ -23,7 +23,7 @@ const Header = () => {
                     <Row>
                         <Col sm='3' className='topL'>
                             <Link to='/'>
-                                <img src={gamerLogo} className='roundImage' />
+                                <img src={gamerLogo} className='roundImage' alt='Gamer Cafe logo'/>
                             </Link>
                         </Col>
                         <Col className='text-center title' sm='6'>
@@ -38,7 +38,7 @@ const Header = () => {
                     <Row>
                         <Col sm='1' xs='6'>
                             <Link to='/'>
-                                <img src={gamerLogo} className='smallRoundImage' height='50' width='auto' />
+                                <img src={gamerLogo} className='smallRoundImage' height='50' width='auto' alt='Gamer Cafe logo' />
                             </Link>
                         </Col>
                         <Col xs={{ offset: 3, size: 3 }} sm={{ offset: 1, size: 10 }}>
