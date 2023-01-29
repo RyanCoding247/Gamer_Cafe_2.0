@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <Container fluid>
+            <Container fluid className='text'>
                 <Row>
                     <Col xs={{ size: 4, offset: 0 }} lg={{ size: 2, offset: 1 }} className='text-center'>
                         <h5>Links</h5>

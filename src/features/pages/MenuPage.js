@@ -1,12 +1,13 @@
 import { Container } from "reactstrap";
+import MenuDisplay from "../menu/MenuDisplay";
 
 const MenuPage = () => {
     return (
-        <Container fluid>
-            <div>
-                Hello Menu!
-            </div>
-        </Container>
+        <>
+            <Container>
+                <MenuDisplay />
+            </Container>
+        </>
     )
 }
 
