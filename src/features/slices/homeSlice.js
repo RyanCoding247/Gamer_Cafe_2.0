@@ -1,4 +1,16 @@
+import { createSlice } from "@reduxjs/toolkit";
 import { EVENTS } from "../../app/shared/EVENTS";
+
+const initialState = {
+    eventsArray: EVENTS
+};
+
+const eventSlice = createSlice({
+    name: 'events', 
+    initialState,
+})
+
+export const eventsReducer = eventSlice.reducer;
 
 export const selectFeaturedEvent = () => {
     return EVENTS.find((featured) => featured);

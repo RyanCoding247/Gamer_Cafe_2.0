@@ -6,8 +6,7 @@ import { selectFeaturedEvent } from "../slices/homeSlice";
 
 const FeaturedEvent = () => {
 
-    const event = selectFeaturedEvent();
-    const { image, name, date, alt } = event;
+    const { image, name, date, alt } = selectFeaturedEvent();
 
     return (
         <Col sm='4' lg='5' className="shopCard mt-3">
