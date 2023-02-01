@@ -180,10 +180,6 @@ body {
     background-color: rgba(19, 14, 14, 0.5);
 }
 
-.btn-dark {
-    color: #ff0000;
-}
-
 .redMSG {
     background-color: #000000;
     border-radius: 10px;
