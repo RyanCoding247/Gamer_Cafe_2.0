@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { eventsReducer } from '../features/slices/homeSlice';
+import { gamesReducer } from '../features/slices/gameSlice';
+import { eventsReducer } from '../features/slices/eventsSlice';
 
 export const store = configureStore({
   reducer: {
-    events: eventsReducer
+    events: eventsReducer,
+    games: gamesReducer
   },
 });

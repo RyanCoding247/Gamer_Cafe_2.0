@@ -12,12 +12,14 @@ const eventSlice = createSlice({
 
 export const eventsReducer = eventSlice.reducer;
 
-export const selectFeaturedEvent = () => {
-    return EVENTS.find((featured) => featured);
-}
+// export const selectFeaturedEvent = (state) => {
+//     return state.events.eventsArray.find((featured) => featured);
+// }
 
-export const selectAllEvents = () => {
-    return EVENTS;
+// Converted above function to inline function in FeaturedEvent.js for demonstration purposes. 
+
+export const selectAllEvents = (state) => {
+    return state.events.eventsArray;
 }
 
 export const selectEventsById = (id) => {

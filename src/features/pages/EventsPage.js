@@ -1,12 +1,9 @@
-import { Container } from "reactstrap";
+import DisplayEvents from "../events/DisplayEvents";
+
 
 const EventsPage = () => {
     return (
-        <Container fluid>
-            <div>
-                Hello Events!
-            </div>
-        </Container>
+        <DisplayEvents />
     )
 }
 

@@ -1,7 +1,7 @@
 import { Container, Row } from "reactstrap";
 import SubHeader from "../components/SubHeader";
-import FeaturedEvent from "../events/FeaturedEvent";
-import HomeEventsList from "../events/HomeEventsList";
+import FeaturedEvent from "../home/FeaturedEvent";
+import HomeEventsList from "../home/HomeEventsList";
 
 const HomePage = () => {
     return (

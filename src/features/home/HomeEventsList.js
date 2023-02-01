@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import { Col, Row } from "reactstrap";
-import { selectAllEvents } from "../slices/homeSlice";
+import { selectAllEvents } from "../slices/eventsSlice";
+import { useSelector } from "react-redux";
 
 const HomeEventsList = () => {
-    const events = selectAllEvents();
+    const events = useSelector(selectAllEvents);
     return (
         <>
-            <Col sm={{size: 4, offset: 2}} lg='5' className='shopCard text-center mt-3'>
+            <Col sm={{ size: 4, offset: 2 }} lg='5' className='shopCard text-center mt-3'>
                 <h3>Other Upcoming Events:</h3>
                 {events.map((item, idx) => {
                     return (
@@ -27,7 +28,6 @@ const HomeEventsList = () => {
                     );
                 })}
             </Col>
-            <Col></Col>
         </>
     )
 };

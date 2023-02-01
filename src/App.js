@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './features/pages/HomePage';
 import React from 'react';
 import './App.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import GamesPage from './features/pages/GamesPage';
 import EventsPage from './features/pages/EventsPage';
 import MenuPage from './features/pages/MenuPage';

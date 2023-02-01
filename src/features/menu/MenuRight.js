@@ -5,7 +5,8 @@ import { selectAllMenuItems } from "../slices/menuSlice";
 const MenuRight = ({ color, color2, color3 }) => {
 
     const pizzaItems = selectAllMenuItems().filter((obj) => obj.type === 'pizza');
-    const saladItems = selectAllMenuItems().filter((obj) => obj.type === 'salad'); const sideItems = selectAllMenuItems().filter((obj) => obj.type === 'side');
+    const saladItems = selectAllMenuItems().filter((obj) => obj.type === 'salad');
+    const sideItems = selectAllMenuItems().filter((obj) => obj.type === 'side');
     const dessertItems = selectAllMenuItems().filter((obj) => obj.type === 'dessert');
 
 
@@ -35,16 +36,16 @@ const MenuRight = ({ color, color2, color3 }) => {
                     12.00
                 </Col>
             </Row>
-            {pizzaItems.map((items, idx) => {
+            {pizzaItems.map((items) => {
                 return (
                     <div key={items.id}>
                         <Row className="foodItem mt-2">
                             <Col sm='6' className=''
                             >
                                 <span
-
                                     className={`${items.glutenFree && color ? 'highlightGF' : ''}${items.dairyFree && color2 ? 'highlightDF' : ''}${items.soyFree && color3 ? 'highlightSF' : ''}`}
-                                >{items.name}
+                                >
+                                    {items.name}
                                 </span>
 
                             </Col>

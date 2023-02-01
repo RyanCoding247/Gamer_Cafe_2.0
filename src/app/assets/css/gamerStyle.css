@@ -75,6 +75,7 @@ body {
     background-color: none;
 }
 
+
 .btnStuff {
     margin-top: 10px;
 }
@@ -149,7 +150,6 @@ body {
 .eventList {
     background-image: linear-gradient(#ffd700, #008000);
     border-radius: 15px;
-    margin-top: 30px;
 }
 
 #eventListStart {

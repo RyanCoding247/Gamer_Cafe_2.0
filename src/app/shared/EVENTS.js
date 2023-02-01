@@ -6,7 +6,7 @@ import retro from '../assets/img/retro.png';
 
 export const EVENTS = [
     {
-        id: 0,
+        id: 1,
         name: 'Tavern Party',
         image: tavernParty,
         alt: 'Party in a fantasy tavern',
@@ -16,7 +16,7 @@ export const EVENTS = [
         featured: true
     },
     {
-        id: 1,
+        id: 2,
         name: 'Dance Dance Tournament',
         image: dance,
         alt: 'Ninja turtles dancing',
@@ -25,7 +25,7 @@ export const EVENTS = [
         summary: "It's a revolution. A Dance Dance Revolution that is!! Let your passion take you as we host the city's largest dance-off! For the next 3 days, challenge yourself to greater heights and get the highest score! The top 32 will have a grand slam face-off on February 8th, 2023 for the title of Ultimate Dance Champion and a $10,000 grand prize!"
     },
     {
-        id: 2,
+        id: 3,
         name: 'Drinking & Dragons',
         image: drinkDragon,
         alt: 'Dragon drinking fine wine',
@@ -34,7 +34,7 @@ export const EVENTS = [
         summary: "What better way to celebrate national Pi day than with pie...and D&D! That's right, it's time to crack out the ol' figuines and dust off those dice! For today and today only, we are hosting unique, never-before-played D&D modules hosted by professional DMs! But that's not all, we are also introducing 3 new types of pies and 20 different types of wine for players to enjoy as they play. So come on by!"
     },
     {
-        id: 3,
+        id: 4,
         name: 'Race Tournament',
         image: raceTourney,
         alt: 'Racing tournament image',
@@ -43,7 +43,7 @@ export const EVENTS = [
         summary: "This is no April Fool's Joke! We are hosting an all-around race tournament. For the next week, we will be competing on every racing machine, 1 game per day. The cusotmer with the highest score will have their portrait placed on the Hall of Flame and receive the mystery grand prize of the day, guaranteed to blow your socks off! Race! Compete! Win! Whether for glory, for honor, for riches, or some other crazy reason, come on down and show your skills!"
     },
     {
-        id: 4,
+        id: 5,
         name: "Rockin' it Retro Style",
         image: retro,
         alt: 'Retro image of car in digital universe',

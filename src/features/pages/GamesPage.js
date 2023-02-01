@@ -8,8 +8,6 @@ const GamesPage = () => {
         <>
             <Container fluid>
                 <SubHeader current='Games' />
-            </Container>
-            <Container>
                 <DisplayGames />
             </Container>
         </>

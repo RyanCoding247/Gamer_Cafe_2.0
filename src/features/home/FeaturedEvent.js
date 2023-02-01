@@ -1,12 +1,15 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Col } from "reactstrap";
-import { selectFeaturedEvent } from "../slices/homeSlice";
+
 
 
 
 const FeaturedEvent = () => {
 
-    const { image, name, date, alt } = selectFeaturedEvent();
+    const { image, name, date, alt } = useSelector((state) => {
+        return state.events.eventsArray.find((featured) => featured);
+    });
 
     return (
         <Col sm='4' lg='5' className="shopCard mt-3">
