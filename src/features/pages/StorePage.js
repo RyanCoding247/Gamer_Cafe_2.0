@@ -1,11 +1,12 @@
 import { Container } from "reactstrap";
+import DisplayStore from "../store/DisplayStore";
+import SubHeader from "../components/SubHeader";
 
 const StorePage = () => {
     return (
         <Container fluid>
-            <div>
-                Hello Store!
-            </div>
+            <SubHeader current='Store' />
+            <DisplayStore />
         </Container>
     )
 }
