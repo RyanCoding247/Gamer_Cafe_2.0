@@ -18,17 +18,17 @@ const DisplayStore = () => {
                 </Col>
             </Row>
             <Row>
-                <Col xs={{size: '10', offset: 1}} md={{size: '8', offset: 2}}>
+                <Col xs={{ size: '10', offset: 1 }} md={{ size: '8', offset: 2 }}>
                     <Row className="shopCard shopRound mx-5">
                         <StoreCard setModalOpen={setModalOpen} setMySelection={setMySelection} />
-                        <StoreForm 
-                        setModalOpen={setModalOpen}
-                        mySelection={mySelection} 
-                        modalOpen={modalOpen} 
-                        />
                     </Row>
                 </Col>
             </Row>
+            <StoreForm
+                setModalOpen={setModalOpen}
+                mySelection={mySelection}
+                modalOpen={modalOpen}
+            />
 
         </>
     )

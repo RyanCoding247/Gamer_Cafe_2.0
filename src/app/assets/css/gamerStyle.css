@@ -32,10 +32,17 @@
     color: #dc3545;
 }
 
+
 body {
     background-image: url(../img/background.jpg);
+    opacity: 1;
     background-size: cover;
 }
+
+.custom-modal-style {
+    width: 897px;
+    height: 802px;
+    }
 
 .roundImage {
     border-radius: 50%;
@@ -187,8 +194,9 @@ body {
 }
 
 .shopCard {
-    background-color: rgba(19, 14, 14, 0.5);
-    color:#ff0000
+    background-color: rgba(19, 14, 14, 0.8);
+    color:#ff0000;
+    justify-items: center;
 }
 
 .shopTitle {

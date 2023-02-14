@@ -177,7 +177,7 @@ export const MENUITEMS = [
         type: "texmex",
         glutenFree: false,
         dairyFree: false,
-        soyFree: true
+        soyFree: false
     },
     {
         name: "Nachos Supreme",

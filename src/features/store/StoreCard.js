@@ -8,7 +8,7 @@ const StoreCard = ({ setModalOpen, setMySelection }) => {
     })
     return (
         <>
-            {store.map((arr) => {
+            {store.map((arr, idx) => {
                 return (
                     <Col sm='6' className="mt-3 mb-4" key={arr.id} >
                         <CardGroup>
@@ -25,7 +25,7 @@ const StoreCard = ({ setModalOpen, setMySelection }) => {
                                     type="submit"
                                     onClick={() => {
                                         setModalOpen(true);
-                                        setMySelection(arr.id - 1);
+                                        setMySelection(idx);
                                     }}                                    
                                     >
                                         Purchase

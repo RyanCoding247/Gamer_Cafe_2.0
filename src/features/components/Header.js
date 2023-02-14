@@ -23,7 +23,7 @@ const Header = () => {
                     <Row>
                         <Col sm='3' className='topL'>
                             <Link to='/'>
-                                <img src={gamerLogo} className='roundImage' alt='Gamer Cafe logo'/>
+                                <img src={gamerLogo} className='roundImage' alt='Gamer Cafe logo' />
                             </Link>
                         </Col>
                         <Col className='text-center title' sm='6'>
@@ -33,62 +33,43 @@ const Header = () => {
                     </Row>
                 </Container>
             </div>
-            <Navbar dark className='sticky-top navbar' expand='sm'>
-                <Container fluid>
-                    <Row>
-                        <Col sm='1' xs='6'>
-                            <Link to='/'>
-                                <img src={gamerLogo} className='smallRoundImage' height='50' width='auto' alt='Gamer Cafe logo' />
-                            </Link>
-                        </Col>
-                        <Col xs={{ offset: 3, size: 3 }} sm={{ offset: 1, size: 10 }}>
+            <Navbar dark className='sticky-top' expand='sm'>
+                <Container fluid className='d-flex justify-content-sm-center'>
+                    <Row className='w-100'>
+                        <Col>
                             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
-                            <Collapse isOpen={menuOpen} navbar>
-                                <Nav className='ms-auto' navbar>
-                                    <Row>
-                                        <Col sm={{ size: 1 }}>
-                                            <NavItem>
-                                                <NavLink className='nav-link' to='/'>
-                                                    <i className='fa fa-home fa-lg' /> Home
-                                                </NavLink>
-                                            </NavItem>
-                                        </Col>
-                                        <Col sm={{ size: 1, offset: 1 }}>
-                                            <NavItem>
-                                                <NavLink className='nav-link' to='games'>
-                                                    <i className='fa fa-gamepad fa-solid fa-lg' /> Games
-                                                </NavLink>
-                                            </NavItem>
-                                        </Col>
-                                        <Col sm={{ size: 1, offset: 1 }}>
-                                            <NavItem>
-                                                <NavLink className='nav-link' to='menu'>
-                                                    <i className='fa fa-cutlery fa-lg' /> Menu
-                                                </NavLink>
-                                            </NavItem>
-                                        </Col>
-                                        <Col sm={{ size: 1, offset: 1 }}>
-                                            <NavItem>
-                                                <NavLink className='nav-link' to='events'>
-                                                    <i className='fa fa-calendar fa-lg' /> Events
-                                                </NavLink>
-                                            </NavItem>
-                                        </Col>
-                                        <Col sm={{ size: 1, offset: 1 }}>
-                                            <NavItem>
-                                                <NavLink className='nav-link' to='rooms'>
-                                                    <i className='fa fa-address-card fa-lg' /> Rooms
-                                                </NavLink>
-                                            </NavItem>
-                                        </Col>
-                                        <Col sm={{ size: 1, offset: 1 }}>
-                                            <NavItem>
-                                                <NavLink className='nav-link' to='store'>
-                                                    <i className='fa fa-shopping-bag fa-lg' /> Store
-                                                </NavLink>
-                                            </NavItem>
-                                        </Col>
-                                    </Row>
+                            <Collapse isOpen={menuOpen} navbar className='justify-content-around'>
+                                <Nav navbar>
+                                        <NavItem className='mx-5'>
+                                            <NavLink className='nav-link' to='/'>
+                                                <i className='fa fa-home fa-lg' /> Home
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem className='mx-5'>
+                                            <NavLink className='nav-link' to='games'>
+                                                <i className='fa fa-gamepad fa-solid fa-lg' /> Games
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem className='mx-5'>
+                                            <NavLink className='nav-link' to='menu'>
+                                                <i className='fa fa-cutlery fa-lg' /> Menu
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem className='mx-5'>
+                                            <NavLink className='nav-link' to='events'>
+                                                <i className='fa fa-calendar fa-lg' /> Events
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem className='mx-5'>
+                                            <NavLink className='nav-link' to='rooms'>
+                                                <i className='fa fa-address-card fa-lg' /> Rooms
+                                            </NavLink>
+                                        </NavItem>
+                                        <NavItem className='mx-5'>
+                                            <NavLink className='nav-link' to='store'>
+                                                <i className='fa fa-shopping-bag fa-lg' /> Store
+                                            </NavLink>
+                                        </NavItem>
                                 </Nav>
                             </Collapse>
                         </Col>
